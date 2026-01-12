@@ -1,0 +1,3 @@
+<?php
+// Partial: hero placeholder.
+

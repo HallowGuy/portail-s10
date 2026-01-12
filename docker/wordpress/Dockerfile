@@ -1,0 +1,2 @@
+# WordPress Dockerfile placeholder
+
