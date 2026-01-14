@@ -1,4 +1,0 @@
-# Migration
-
-Placeholder content.
-

@@ -1,4 +1,0 @@
-# Architecture
-
-Placeholder content.
-

@@ -1,4 +1,0 @@
-# Textes standards
-
-Placeholder content.
-
