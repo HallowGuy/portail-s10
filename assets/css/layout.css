@@ -1,2 +1,21 @@
-/* Layout styles placeholder. */
+/* =========================================================
+   LAYOUT GLOBAL
+   ========================================================= */
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main {
+  padding-bottom: 64px;
+}
+
+/* Grilles sécurisées Gutenberg */
+.cards,
+.news-list,
+.links-grid {
+  display: grid;
+  width: 100%;
+}

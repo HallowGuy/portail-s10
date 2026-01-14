@@ -1,10 +1,15 @@
-<?php
-// Template minimaliste – fallback pour toutes les pages
-get_header();
-if ( have_posts() ) {
-    while ( have_posts() ) {
-        the_post();
+<?php get_header(); ?>
+
+<section class="page-content">
+  <div class="container">
+    <?php
+    if (have_posts()) :
+      while (have_posts()) : the_post();
         the_content();
-    }
-}
-get_footer();
+      endwhile;
+    endif;
+    ?>
+  </div>
+</section>
+
+<?php get_footer(); ?>

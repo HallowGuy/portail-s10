@@ -1,2 +1,139 @@
-/* Pages styles placeholder. */
+/* =========================================================
+   STRUCTURE ÉDITORIALE GÉNÉRALE
+   ========================================================= */
 
+.section {
+  padding: 64px 0;
+}
+
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-title {
+  margin: 0 0 24px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.section-intro {
+  max-width: 720px;
+  margin-bottom: 40px;
+  color: var(--color-text-muted);
+}
+
+/* =========================================================
+   HERO INSTITUTIONNEL
+   ========================================================= */
+
+.section-hero {
+  padding: 80px 0;
+}
+
+.section-hero h1 {
+  max-width: 800px;
+  margin-bottom: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.section-hero p {
+  max-width: 720px;
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+/* =========================================================
+   GRILLES DE TUILES (CHIFFRES / MISSIONS / LIENS)
+   ========================================================= */
+
+.cards,
+.links-grid,
+.news-list {
+  display: grid;
+  gap: 24px;
+}
+
+/* Desktop */
+.cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.links-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.news-list {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .cards,
+  .links-grid,
+  .news-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   CARTES
+   ========================================================= */
+
+.card {
+  height: 100%;
+  padding: 24px;
+  background-color: var(--color-bg-main);
+  border: 1px solid var(--color-border);
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+/* =========================================================
+   COMPTEURS
+   ========================================================= */
+
+.counter {
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* =========================================================
+   ACTUALITÉS
+   ========================================================= */
+
+.news-item {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.news-item h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.news-item time {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
